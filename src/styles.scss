@@ -16,3 +16,16 @@
     }
   }
 }
+
+.product-detail {
+  box-shadow: 0px 2px 5px rgb(0 0 0 / 20%);
+  padding: .5em;
+  .swiper-slide {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+}
