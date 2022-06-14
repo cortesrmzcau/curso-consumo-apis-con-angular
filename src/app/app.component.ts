@@ -12,6 +12,8 @@ export class AppComponent {
 
   imgParent = ''; // https://www.w3schools.com/howto/img_avatar.png
   showImg = true;
+  token = '';
+  imgRta = '';
 
   constructor(
     private usersService: UsersService,
@@ -45,5 +47,16 @@ export class AppComponent {
 
   downloadPDF() {
     this.fileServer.getFile('my.pdf', 'https://young-sands-07814.herokuapp.com/api/files/dummy.pdf', 'application/pdf');
+  }
+
+  onUpload(event: Event) {
+    const element = event.target as HTMLInputElement;
+    const file = element.files?.item(0);
+    if (file) {
+      this.fileServer.uploadFile(file)
+      .subscribe(rta => {
+        this.imgRta = rta.location;
+      });
+    }
   }
 }
