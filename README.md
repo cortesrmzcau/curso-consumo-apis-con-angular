@@ -1,4 +1,16 @@
-# 🌟 Curso de Componentes y Servicios con Angular de Platzi 💚
+### 🌟 Practica del Curso de APIs REST con Angular de Platzi 💚
+
+🔔 [Demo]()
+
+🔔 Curso de [APIs REST con Angular](https://platzi.com/cursos/angular-apis/) en Platzi
+
+#### Estructura del curso:
+- HTTP básico
+- Buenas practicas
+- Auth
+- Archivos
+
+---
 
 🔥 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
